@@ -39,7 +39,7 @@
     "node": ">=24",
     "npm": ">=11"
   },
-  "peerDependencies": {
+  "dependencies": {
     "@sinclair/typebox": "0.34.48"
   }
 }
