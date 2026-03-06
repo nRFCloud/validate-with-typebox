@@ -19,7 +19,7 @@
   "main": "export.ts",
   "devDependencies": {
     "@bifravst/prettier-config": "1.1.17",
-    "@types/node": "25.3.0",
+    "@types/node": "25.3.3",
     "@typescript/native-preview": "7.0.0-dev.20260220.1",
     "prettier": "3.8.1"
   },
