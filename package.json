@@ -20,7 +20,7 @@
   "devDependencies": {
     "@bifravst/prettier-config": "1.1.17",
     "@types/node": "25.9.5",
-    "@typescript/native-preview": "7.0.0-dev.20260630.1",
+    "@typescript/native-preview": "7.0.0-dev.20260707.2",
     "prettier": "3.9.6"
   },
   "prettier": "@bifravst/prettier-config",
