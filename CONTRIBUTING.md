@@ -15,7 +15,7 @@ to [JSR](https://jsr.io/@nrfcloud/validate-with-typebox) automatically by
 
 ## Testing
 
-1. Run `npx tsgo` to type-check the project.
+1. Run `npx tsc` to type-check the project.
 1. Run `npm test` for the unit tests.
 
 ## Squash your commits
