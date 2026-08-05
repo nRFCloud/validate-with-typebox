@@ -1,13 +1,13 @@
 # `@nrfcloud/validate-with-typebox`
 
-<https://jsr.io/@nrfcloud/validate-with-typebox>
+<https://www.npmjs.com/package/@nrfcloud/validate-with-typebox>
 
 Helper function to validate data with TypeBox schemas.
 
 ## Install with NPM
 
 ```bash
-npx jsr add (--save-prod|--save-dev) @nrfcloud/validate-with-typebox
+npm i (--save-prod|--save-dev) @nrfcloud/validate-with-typebox
 ```
 
 ## Usage

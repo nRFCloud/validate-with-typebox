@@ -1,8 +1,8 @@
 # Contributing
 
 `@nrfcloud/validate-with-typebox` is a published library. Releases are published
-to [JSR](https://jsr.io/@nrfcloud/validate-with-typebox) automatically by
-`semantic-release` on merge to `main`.
+to [NPM](https://www.npmjs.com/package/@nrfcloud/validate-with-typebox)
+automatically by `semantic-release` on merge to `main`.
 
 ## Development setup
 
@@ -28,11 +28,24 @@ to [JSR](https://jsr.io/@nrfcloud/validate-with-typebox) automatically by
 1. Get the code reviewed.
 1. Once approved and CI passes, rebase or squash away!
 
+## Building the NPM package
+
+The package is published as compiled JavaScript with type declarations in the
+`npm/` folder, which is created by the `prepublishOnly` hook:
+
+1. [`.npm/compile.ts`](.npm/compile.ts) transpiles the TypeScript sources using
+   [`@swc/core`](https://www.npmjs.com/package/@swc/core) and rewrites the `.ts`
+   import specifiers to `.js`.
+1. [TypeScript 7](https://www.npmjs.com/package/typescript) emits the type
+   declarations, using [`.npm/tsconfig.npm.json`](.npm/tsconfig.npm.json).
+
+Run `npm run prepublishOnly` to build it locally.
+
 ## Releasing a new version
 
 1. [`semantic-release` in the Test&Release workflow](.github/workflows/test-and-release.yaml)
    takes care of creating a new GitHub release and publishing the package to
-   [JSR](https://jsr.io/@nrfcloud/validate-with-typebox).
+   [NPM](https://www.npmjs.com/package/@nrfcloud/validate-with-typebox).
 
 Once a new version is published, consumers can bump the
 `@nrfcloud/validate-with-typebox` dependency to pick it up.
