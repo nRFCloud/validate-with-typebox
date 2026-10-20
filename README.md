@@ -8,7 +8,7 @@ Helper function to validate data with TypeBox schemas.
 
 The package is published to the
 [GitHub Packages registry](https://github.com/nRFCloud/validate-with-typebox/pkgs/npm/validate-with-typebox).
-Until all projects have migrated, releases are also published to
+Releases are also published to
 [npm](https://www.npmjs.com/package/@nrfcloud/validate-with-typebox).
 
 To install it, point the `@nrfcloud` scope to it in your project's `.npmrc` and
