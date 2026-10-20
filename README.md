@@ -1,10 +1,24 @@
 # `@nrfcloud/validate-with-typebox`
 
-<https://www.npmjs.com/package/@nrfcloud/validate-with-typebox>
+<https://github.com/nRFCloud/validate-with-typebox/pkgs/npm/validate-with-typebox>
 
 Helper function to validate data with TypeBox schemas.
 
-## Install with NPM
+## Installation
+
+The package is published to the
+[GitHub Packages registry](https://github.com/nRFCloud/validate-with-typebox/pkgs/npm/validate-with-typebox).
+Until all projects have migrated, releases are also published to
+[npm](https://www.npmjs.com/package/@nrfcloud/validate-with-typebox).
+
+To install it, point the `@nrfcloud` scope to it in your project's `.npmrc` and
+[authenticate](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry#authenticating-to-github-packages)
+with a token that has the `read:packages` scope:
+
+```
+@nrfcloud:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
+```
 
 ```bash
 npm i (--save-prod|--save-dev) @nrfcloud/validate-with-typebox
